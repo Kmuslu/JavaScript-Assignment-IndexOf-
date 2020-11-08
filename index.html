@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript IndexOf()</h2>
+
+    <p>This example calls a function which finds the index of a letter in a string, and returns the result:</p>
+
+    <p>Click the button to test the function in the prompt box.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function myFunction(myString, myLetter) {
+            var myString = prompt("Enter a word").toLowerCase();
+            var myLetter = prompt("Enter a random letter in the word you just entered").toLowerCase(); 
+            if (myString != null && myLetter != null) {
+                return myString.indexOf(myLetter);
+            }
+            
+        }
+        document.getElementById("demo").innerHTML =  myFunction() ;
+
+       
+
+    </script>
+</body>
+
+</html>
